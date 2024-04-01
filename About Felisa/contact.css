@@ -1,0 +1,150 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    /* overflow: hidden; */
+    background: linear-gradient(to bottom, rgba(255, 183, 236, 0.65), rgba(102, 202, 252, 0.79), rgba(252, 230, 102, 0.7),  rgba(102, 202, 252, 0.79), rgba(255, 183, 236, 0.65));
+}
+
+.container {
+    width: 100%;
+}
+
+nav {
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+    top: 0;
+    left: 0;
+    padding: 25px 100px;
+    line-height: 20px;
+    z-index: 100;
+}
+
+.navitems {
+    display: flex;
+}
+
+.navitems li {
+    list-style: none;
+    margin: 0 ;
+}
+
+.navitems li a{
+    text-decoration: none;
+    color: white;
+    padding: 6px 15px;
+    border-radius: 20px;
+    margin: 0 10px;
+    font-weight: 600;
+}
+
+.navitems li:hover a {
+    background: pink;
+    color: white
+}
+
+
+
+.contact {
+    min-height: 100vh;
+    padding: 50px;
+    text-align: center;
+}
+
+.containers {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.containers h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+    color: black;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 30px;
+}
+
+.form{
+    text-align: left;
+}
+
+.form h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: black;
+}
+
+.group {
+    margin-bottom: 20px;
+}
+
+input, textarea{
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
+    border: none;
+    background-color: white;
+    color: white;
+}
+
+input:focus, textarea:focus{
+    outline: nonne;
+    box-shadow: 0 0 8px #bbb;
+}
+
+button{
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: rgba(250, 179, 123, 0.97);
+    color: black;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+button:hover {
+    background-color: pink;
+}
+
+.info {
+    text-align: left;
+    /* padding: 30px; */
+}
+
+.info h3{
+    font-size: 24px;
+    padding: 0 40px;
+    margin-bottom: 10px;
+    color: black;
+}
+
+.info p{
+    margin-bottom: 10px;
+    padding: 15px;
+    border-radius: 8px;
+    border: none;
+    color: black;
+}
+
+.info i{
+    color: blueviolet;
+    margin-right: 10px;
+}
+
+@media screen and(max-width: 768px){
+    .container{
+        padding: 20px;
+    }
+    .wrapper {
+        grid-template-columns: 1fr;
+    }
+}

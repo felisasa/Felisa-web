@@ -1,0 +1,135 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    /* overflow: hidden; */
+    background: linear-gradient(to bottom,  rgba(252, 230, 102, 0.7), rgba(102, 202, 252, 0.79), rgba(255, 183, 236, 0.65) );
+}
+
+.container {
+    width: 100%;
+}
+
+nav {
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+    top: 0;
+    left: 0;
+    padding: 25px 100px;
+    line-height: 20px;
+    z-index: 100;
+}
+
+.navitems {
+    display: flex;
+}
+
+.navitems li {
+    list-style: none;
+    margin: 0 ;
+}
+
+.navitems li a{
+    text-decoration: none;
+    color: white;
+    padding: 6px 15px;
+    border-radius: 20px;
+    margin: 0 10px;
+    font-weight: 600;
+}
+
+.navitems li:hover a {
+    background: pink;
+    color: white
+}
+
+.education .containers {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 1rem 0;
+    padding-left: 3rem;
+}
+
+.education .containers .box{
+    width: 27rem;
+    margin: 4rem 1rem;
+    padding-left: 4rem;
+    border-left: 2rem solid white;
+    position: relative;
+}
+
+.education .containers .box span {
+    font-size: 1.3rem;
+    background: rgba(3, 3, 3, 0.59);
+    color: white;
+    border-radius: 5rem;
+    padding: 1rem 3rem;
+}
+
+
+.education .containers .box h3{
+    font-size: 2rem;
+    color: white;
+    padding-top: 1.5rem;
+}
+
+.education .containers .box p{
+    font-size: 1.4rem;
+    color: #eee;
+    padding: 1rem 0;
+}
+
+.education .containers .box i {
+    position: absolute;
+    top: -1.5rem;
+    left: -2.5rem;
+    height: 5rem;
+    width: 5rem;
+    border-radius: 50%;
+    line-height: 5rem;
+    text-align: center;
+    font-size: 3rem;
+    color: white;
+}
+
+.education .containers .box {
+    width: 100%;
+}
+
+.image {
+    position: relative;
+    width: 100%;
+    height: 50%;
+}
+
+.image img{
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+
+.image #splash {
+    position: absolute;
+    top: 0;
+    left: 0;
+    /* transform: translate(50%, 50%); */
+    width: 100%;
+    /* filter: saturate(200); */
+    animation: animate 4s linear infinite;
+}
+
+@keyframes animate{
+    50%{
+        top: 3%;
+        left: 2%;
+        width: 98%;
+
+    }
+}

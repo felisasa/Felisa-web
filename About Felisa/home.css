@@ -1,0 +1,251 @@
+@import url('https://fonts.google.com/specimen/Poppins?query=popp');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif
+}
+
+body {
+    min-height: 100vh;
+    overflow-x: hidden;
+    background: linear-gradient(to bottom, rgba(102, 202, 252, 0.79), rgba(255, 183, 236, 0.65), rgba(252, 230, 102, 0.7),  rgba(102, 202, 252, 0.79));
+    background-size: 2000% 350%;
+    width: 100%;
+    height: 100vh;
+}
+
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 100px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    z-index: 100;
+    
+}
+
+.navigation a {
+    text-decoration: none;
+    color: white;
+    padding: 6px 15px;
+    border-radius: 20px;
+    margin: 0 10px;
+    font-weight: 600;
+}
+
+.navigation a:hover,
+.navigation a.active {
+    background: pink;
+    color: white
+}
+
+.parallax {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#text {
+    position: absolute;
+    font-size: 5cm;
+    color: grey;
+}
+
+.parallax img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 95%;
+    pointer-events: none;
+}
+
+
+.wrapper {
+    display: inline-block;
+    width: 100%;
+    justify-content: center;
+}
+
+.card {
+    width: 300px;
+    height: 300px;
+    border-radius: 20px;
+    padding: 15px 25px;
+    box-sizing: border-box;
+    margin: 40px 165px;
+    position: relative;
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 7px 10px rgba(0,0,0,0,5);
+    transition: 0.5s ease-in-out;
+}
+
+.card:hover {
+    transform: translateY(20px);
+}
+
+.card:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(255, 183, 236, 0.65), rgba(102, 202, 252, 0.79));
+    z-index: 2;
+    transition: 0.5s all;
+    opacity: 0;
+}
+
+.card:hover:before {
+    opacity: 1;
+    border-radius: 1.5rem;
+}
+
+.card img {
+    width: 100%;
+    height: 100%;
+    border-radius: 1.5rem;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.card .info {
+    position: relative;
+    z-index: 3;
+    color: #fff;
+    opacity: 0;
+    transform: translateY(30px);
+    transition: 0.5s all;
+}
+
+.card:hover .info{
+    opacity: 1;
+    transform: translateY(0px);
+}
+
+.card .info p{
+    letter-spacing: 1px;
+    font-size: 20px;
+    margin-top: 60%;
+    margin-bottom: 10%;
+}
+
+.card .info .btn {
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    background: white;
+    color:  black;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.4s ease-in-out;
+    border-radius: 0.5rem;
+}
+
+.card .info .btn:hover{
+    box-shadow: 0px 7px 10px rgba(0,0,0,0,5);
+    border-radius: 1rem;
+}
+
+footer {
+    background-color: black;
+}
+
+.footer {
+    width: 100%;
+    padding: 10px 10px 10px;
+}
+
+.social {
+    display: flex;
+    justify-content: center;
+}
+
+.social a{
+    text-decoration: none;
+    padding: 10px;
+    background-color: white;
+    margin: 10px;
+    border-radius: 50%;
+}
+
+.social a i{
+    font-size: 2em;
+    color: black;
+    opacity: 0.9;
+}
+
+.social a:hover {
+    background-color: #111;
+    transition: 0.5s;
+}
+
+.social a:hover i {
+    color: white;
+    transition: 0.5s;
+
+}
+
+.footernav {
+    margin: 30px 0;
+}
+
+.footernav ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: nontdisc;
+}
+
+.footernav ul li a {
+    color: white;
+    margin: 20px;
+    text-decoration: none;
+    font-size: 1.3em;
+    opacity: 0.7;
+    transition: 0.5s;
+}
+
+.footernavul li a :hover {
+    opacity: 1;
+}
+
+.footerbot {
+    background-color: black;
+    padding: 10px;
+    text-align: center;
+}
+
+.footerbot p{
+    color: white;
+}
+
+.designer {
+    opacity: 0.7;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 400;
+    margin: 0px 5px;
+}
+
+@media (max-width: 700px){
+    .footernav ul{
+        flex-direction: column;
+    }
+    .footernav ul li{
+        width: 100%;
+        text-align: center;
+        margin: 10px;
+    }
+}
